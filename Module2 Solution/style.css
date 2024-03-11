@@ -17,7 +17,7 @@ body {
 }
 
 .section {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0;  /* Light gray background */
     border: 1px solid black;
     padding: 20px;
     margin: 10px;
@@ -26,7 +26,7 @@ body {
 }
 
 .section-title {
-    background-color: #e0e0e0;
+    background-color: #ddd;  /* Lighter gray for title section */
     border: 1px solid black;
     padding: 5px 10px;
     position: absolute;
@@ -34,17 +34,22 @@ body {
     right: 0;
 }
 
+.section:nth-child(1) {  /* Chicken section */
+    background-color: #ffd700;  /* Light yellow */
+    color: black;  /* Black text for better contrast */
+}
+
+.section:nth-child(2) {  /* Beef section */
+    background-color: #c64b3a;  /* Light red */
+    color: white;  /* White text for better contrast */
+}
+
+.section:nth-child(3) {  /* Sushi section */
+    background-color: #90ee90;  /* Light green */
+    color: black;  /* Black text for better contrast */
+}
+
 @media (max-width: 991px) {
     .section {
         width: 50%; /* Make sections take up 1/2 of the width on tablet */
-    }
-    .section:nth-child(3) {
-        margin-top: 20px; /* Move the third section to the second row on tablet */
-    }
-}
-
-@media (max-width: 767px) {
-    .section {
-        width: 100%; /* Make sections take up 100% of the width on mobile */
-    }
-}
+    
